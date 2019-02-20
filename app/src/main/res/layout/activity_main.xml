@@ -7,6 +7,30 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#D81B60"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/bt1"
+        app:layout_constraintStart_toStartOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#D81B60"
+        android:text="/"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/bt3"
+        app:layout_constraintStart_toStartOf="@+id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/bt3" />
+
     <EditText
         android:id="@+id/edtNumber1"
         android:layout_width="wrap_content"
@@ -42,20 +66,33 @@
         app:layout_constraintTop_toBottomOf="@+id/edtNumber1" />
 
     <Button
-        android:id="@+id/btPlus"
+        android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#D81B60"
-        android:text="Plus +"
+        android:text="+"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.728"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumber2" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#D81B60"
+        android:text="*"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/edtNumber2"
         app:layout_constraintTop_toBottomOf="@+id/edtNumber2" />
 
     <TextView
@@ -64,15 +101,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btPlus"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        app:layout_constraintVertical_bias="0.319" />
+
+
 </android.support.constraint.ConstraintLayout>
